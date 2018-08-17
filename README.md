@@ -10,3 +10,5 @@ https://sites.google.com/a/cin.ufpe.br/coordenacao-de-infraestrutura/acesso-as-a
 \\webserver.cin.ufpe.br\SEULOGIN
 
 Acessar essa pasta dps de logar na vpn, coloca na pasta principal com o nome index.html e sucesso.
+
+Para ver como ficou. POde acessar cin.ufpe.br/~mwac
