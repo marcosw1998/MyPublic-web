@@ -1,0 +1,261 @@
+/*
+* author: Macos William
+* @version 1.0
+*/
+
+/* ========================== Layout ==========================*/
+
+html,body, .capa{
+    height: 100%;
+    overflow: auto;
+}
+
+html>body{
+    background: url('../imagens/background.jpg');
+    background-attachment: fixed;
+    overflow-x: hidden;    
+}
+
+
+/* ========== Navbar ==========*/
+
+.img-logo{
+    height: 75px;
+    width: 186px;
+    display: inline-block;
+    background: url('../imagens/Logo-Marcosoft.png') no-repeat;    
+    background-size: contain;
+    color: transparent;
+}
+.navbar-transparent{
+    padding: 5px 0px;
+    padding-left: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    height: 80px;
+}
+.navbar-brand{
+    padding: 0px;
+}
+.divisor{
+    width: 1px;
+    height: 16px;
+    background: white;
+    margin: 25px 10px;
+}
+.navbar-inverse .navbar-nav>li>a{
+    margin-left: 5px;
+    margin-top: 8px;
+}
+.nav>li>a:focus
+{
+    background: transparent;
+}
+.navbar-inverse .navbar-nav>li>a.highlight, #rodape .nav a{
+    color: #FFF;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, #rodape .nav a:hover{
+    color: rgb(29, 154, 185);
+    transition: 0.2s;
+    background: none;
+}
+.fontbar{
+    font-size: 16px;
+    font-family: 'Fruktur', 'Lobster', cursive; 
+}
+
+/* ========== Imagem de Capa ==========*/
+
+.capa{
+    display: table;
+    width: 100%;
+}
+.texto-capa{
+    text-align: center;
+    color: #FFF;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Caveat Brush', cursive; 
+    letter-spacing: 0.2em;
+    
+}
+/* ========== Texto menor da Capa ==========*/
+.leads{
+    margin: 0.5em 0.1em;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+/* ========== Botões ==========*/
+.btn-custom{
+    border-radius: 500px;
+    -moz-border-radius: 500px;
+    -webkit-border-radius: 500px;
+    letter-spacing: 2px;
+    min-width: 160px;
+    line-height: 14px;
+    padding: 16px 48px 18px 48px;  
+    margin: 0px 15px;  
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background .8s, color 0.5s;
+}
+.btn-verde{
+    background-color: #1DB954;
+}
+.btn-verde:hover{
+    background-color:#1ED760;
+    color: #FFF;
+}
+.btn-transparent{   
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid white;
+}
+.btn-transparent:hover,.btn-transparent:active, .btn-transparent:focus{
+    background-color:#FFF;
+}
+/* ========== Serviços ==========*/
+#about{
+    background-color: white;
+    padding: 20px 0px;
+}
+.albuns{   
+    padding: 10px 0px;
+}
+/* ========== Recursos ==========*/
+
+#recursos{
+    padding: 0px 10px;
+    padding-bottom: 50px;
+    font-weight: 700;
+    color: #FFF;
+}
+.rotacionar{   
+   transform: rotate(30deg);
+   -ms-transform: rotate(20deg);  /*IE 9*/
+   -webkit-transform: rotate(20deg); /*Chrome, Safari e Opera*/
+   padding-left: 120px;
+}
+/* ========== Rodapé ==========*/
+
+footer{
+    background: black;
+    padding: 50px 0px 50px 0px;
+    position: relative;
+    color: white;
+     font-size: 14px;
+    font-weight: 600;
+}
+.icon-rede-social{
+    float: right;
+    background-color: #222326;
+    border-radius:50%;
+    padding: 3px 0px 0px 0px;
+    margin: 6px;
+}
+#social-icon{
+    fill: #FFF;
+    width: 24px;
+    height: 24px;
+    transition: 0.2s;
+}
+#social-icon:hover{
+    fill: #1DB954;
+}
+#rodape{
+    padding-top: 85px;
+}
+#rodapetext
+{
+    padding-top: 120px;
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    position: relative;
+    font-family: 'Lobster','Indie Flower','Fruktur','Caveat Brush', cursive; 
+}
+
+
+
+
+
+
+/* ========================== Tipografia ==========================*/
+
+h1{
+    font-weight: 900;
+    font-size: 70px;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+}
+h2{
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+h3{
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+#about h2{
+    color: rgb(0, 204, 255);
+}
+#about h3{
+    color: rgb(0, 204, 255);
+}
+#recursos h3{
+    color: rgb(0, 204, 255);
+}
+#rodape h4{
+    color: #919496;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .06em;
+    margin: 20px 14px 22px;
+}
+
+
+/* ========== Media Screens ==========*/
+
+@media screen and (max-width: 992px){
+    h1{
+        font-size: 3.6em;
+    }
+    p{
+        font-size: 1em;
+    }
+    #about h2{
+        font-size: 2.5em;
+    }
+    #about h3
+    {
+        font-size: 2em;
+    }
+   .icon-rede-social
+   {
+        float: left;
+   }
+   .img-logo{
+    width: 90px;
+    margin-bottom: 20px;
+   }   
+   .navbar-transparent{
+    
+    padding: 0px 0px 50px 15px;
+    background-color: black;
+    height: 53px;
+    }
+    .btn-custom
+    {
+        padding: 10px 15px;  
+        margin: 10px 15px;  
+    }
+    
+    .leads{
+        font-size: 1em;
+    }
+}
